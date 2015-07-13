@@ -1,13 +1,14 @@
 
 === Airplane Mode ===
-Contributors: norcross
+Contributors: norcross, johnbillion, afragen, szepeviktor, chriscct7, markjaquith
+Website Link: https://github.com/norcross/airplane-mode
 Donate link: https://andrewnorcross.com/donate
 Tags: external calls, HTTP
 Requires at least: 3.7
-Tested up to: 4.1
-Stable tag: 0.0.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 4.2
+Stable tag: 0.0.8
+License: MIT
+License URI: http://opensource.org/licenses/mit-license.php
 
 Control loading of external files when developing locally
 
@@ -41,6 +42,27 @@ Because you are a jet set developer who needs to work without internet.
 
 
 == Changelog ==
+
+= 0.0.8 - 2015/05/18
+* added `class_exists` as now included in DesktopServer and collisions could result
+* fixed `if ( ! defined ...` for `AIRMDE_BASE` constant
+
+= 0.0.7 - 2015/04/21 =
+* fixed some CSS from hiding plugins page bar
+* moved changelog to it's own file
+* added `composer.json`
+* added contributors to readme
+* clarified license (MIT)
+
+= 0.0.6 - 2015/04/02 =
+* version bump for GitHub updater
+
+= 0.0.5 - 2015/04/02 =
+* fixed bug in update logic that was preventing checks when disabled (but activated). props @johnbillion
+
+= 0.0.4 - 2015/04/02 =
+* added multiple checks for all the various theme and plugin update calls. props @chriscct7
+* added HTTP counter on a per-page basis. props @szepeviktor
 
 = 0.0.3 - 2015/01/23 =
 * added `airplane_mode_status_change` hook for functions to fire on status change

@@ -1,14 +1,13 @@
-
 === Airplane Mode ===
 Contributors: norcross, johnbillion, afragen, szepeviktor, chriscct7, markjaquith
 Website Link: https://github.com/norcross/airplane-mode
 Donate link: https://andrewnorcross.com/donate
 Tags: external calls, HTTP
-Requires at least: 3.7
-Tested up to: 4.2
-Stable tag: 0.0.8
+Requires at least: 4.0
+Tested up to: 4.5
+Stable tag: 0.1.6
 License: MIT
-License URI: http://opensource.org/licenses/mit-license.php
+License URI: http://norcross.mit-license.org/
 
 Control loading of external files when developing locally
 
@@ -18,9 +17,10 @@ Control loading of external files when developing locally. WP loads certain exte
 
 Features
 
-* sets the src for Open Sans CSS font file to null due to dependency issues ( see [related Trac ticket](https://core.trac.wordpress.org/ticket/28478) )
+* removes external JS and CSS files from loading
 * replaces all instances of Gravatar with a local image to remove external call
 * removes all HTTP requests
+* disables all WP update checks for core, themes, and plugins
 * includes toggle in admin bar for quick enable / disable
 
 == Installation ==
@@ -42,6 +42,37 @@ Because you are a jet set developer who needs to work without internet.
 
 
 == Changelog ==
+
+= 0.1.6 - 2016/04/25
+* minor tweak to include CSS for new icon font
+
+= 0.1.5 - 2016/04/24
+* adding custom icon font for display and removing label. props @barryceelen
+
+= 0.1.4 - 2016/02/26
+* better setup for blocked external assets. props @johnbillion
+
+= 0.1.3 - 2016/02/22
+* modified CSS rules to fix media bulk actions bar from disappearing
+* moved `airplane_mode_status_change` action to run before redirect, and now includes the status being run.
+
+= 0.1.2 - 2016/01/09
+* added back HTTP count when inactive
+* removed HTTP count completely when Query Monitor is active
+
+= 0.1.1 - 2016/01/06
+* fixed incorrect nonce check that was breaking toggle
+* changed CSS and JS checks to include all themes and plugins as well as core
+
+= 0.1.0 - 2015/12/30
+* added `airplane_mode_purge_transients` filter to bypass transient purge
+
+= 0.0.9 - 2015/12/07
+* changed from colored circle to actual airplane icon for usability
+* fixed dashboard link icon for multisite
+* changed to exclude all external stylesheets, not just Open Sans
+* added language files for translateable goodness
+* general cleanup for WP coding standards
 
 = 0.0.8 - 2015/05/18
 * added `class_exists` as now included in DesktopServer and collisions could result

@@ -1,3 +1,34 @@
+#### Version 0.1.6 - 2016/04/25
+* minor tweak to include CSS for new icon font
+
+#### Version 0.1.5 - 2016/04/24
+* adding custom icon font for display and removing label. props @barryceelen
+
+#### Version 0.1.4 - 2016/02/26
+* better setup for blocked external assets. props @johnbillion
+
+#### Version 0.1.3 - 2016/02/22
+* modified CSS rules to fix media bulk actions bar from disappearing
+* moved `airplane_mode_status_change` action to run before redirect, and now includes the status being run.
+
+#### Version 0.1.2 - 2016/01/09
+* added back HTTP count when inactive
+* removed HTTP count completely when Query Monitor is active
+
+#### Version 0.1.1 - 2016/01/06
+* fixed incorrect nonce check that was breaking toggle
+* changed CSS and JS checks to include all themes and plugins as well as core
+
+#### Version 0.1.0 - 2015/12/30
+* added `airplane_mode_purge_transients` filter to bypass transient purge
+
+#### Version 0.0.9 - 2015/12/07
+* changed from colored circle to actual airplane icon for usability
+* fixed dashboard link icon for multisite
+* changed to exclude all external stylesheets, not just Open Sans
+* added language files for translateable goodness
+* general cleanup for WP coding standards
+
 #### Version 0.0.8 - 2015/05/18
 * added `class_exists` as now included in DesktopServer and collisions could result
 * fixed `if ( ! defined ...` for `AIRMDE_BASE` constant

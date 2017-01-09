@@ -4,8 +4,8 @@ Website Link: https://github.com/norcross/airplane-mode
 Donate link: https://andrewnorcross.com/donate
 Tags: external calls, HTTP
 Requires at least: 4.4
-Tested up to: 4.5
-Stable tag: 0.1.7
+Tested up to: 4.7
+Stable tag: 0.2.2
 License: MIT
 License URI: http://norcross.mit-license.org/
 
@@ -42,6 +42,23 @@ Because you are a jet set developer who needs to work without internet.
 
 
 == Changelog ==
+
+= 0.2.2 - 2016/12/07
+* Adding WP-CLI support. props @markjaquith
+
+= 0.2.1 - 2016/10/19
+* Fix settings page language drowdown when used offline. props @onnimonni
+
+= 0.2.0 - 2016/08/26
+* modify CSS loading for front-end, removed loading for login page. props @barryceelen
+* fixed WP.org theme API call request to avoid `WP_Error` return. props @onnimonni
+
+= 0.1.9 - 2016/07/25
+* Prevent BuddyPress from falling back to Gravatar. props @johnbillion
+
+= 0.1.8 - 2016/07/12
+* allow `JETPACK_DEV_DEBUG` constant to take priority over filter. props @kopepasah
+* added additional CSS for upcoming 4.6. change to upload tab.
 
 = 0.1.7 - 2016/05/18
 * allow local HTTP calls with optional filter. props @johnbillion
